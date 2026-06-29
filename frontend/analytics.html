@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>RiskLens | Analytics</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+<body>
+
+<div class="dashboard">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+
+        <div class="sidebar-top">
+
+            <h2>Risk<span>Lens</span></h2>
+
+            <div class="menu">
+
+                <a href="dashboard.html">
+                    <i class="fa-solid fa-house"></i> Dashboard
+                </a>
+
+                <a class="active" href="analytics.html">
+                    <i class="fa-solid fa-chart-line"></i> Analytics
+                </a>
+
+                <a href="map.html">
+                    <i class="fa-solid fa-map"></i> Map
+                </a>
+
+                <a href="states.html">
+                    <i class="fa-solid fa-city"></i> States
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="sidebar-bottom">
+            © 2026 RiskLens
+        </div>
+
+    </aside>
+
+    <!-- MAIN -->
+    <main class="main">
+
+        <!-- TOPBAR -->
+        <div class="topbar">
+
+            <div>
+                <h1>Analytics Dashboard</h1>
+                <p>NFHS-5 Health Indicator Insights</p>
+            </div>
+
+        </div>
+
+        <!-- CHART GRID -->
+        <div class="analytics-grid">
+
+            <div class="analytics-card">
+                <h3>Top Health Drivers</h3>
+                <canvas id="indicatorChart"></canvas>
+            </div>
+
+            <div class="analytics-card">
+                <h3>Risk Distribution</h3>
+                <canvas id="riskChart"></canvas>
+            </div>
+
+            <div class="analytics-card">
+                <h3>Cluster Distribution</h3>
+                <canvas id="urbanRuralChart"></canvas>
+            </div>
+
+            <div class="analytics-card">
+                <h3>Top Risk States</h3>
+                <canvas id="topStatesChart"></canvas>
+            </div>
+
+        </div>
+
+        <div class="footer">
+            RiskLens • Public Health Intelligence System
+        </div>
+
+    </main>
+
+</div>
+
+<script src="js/analytics.js"></script>
+
+</body>
+
+</html>

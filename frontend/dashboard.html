@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>RiskLens | Dashboard</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+<body>
+
+<div class="dashboard">
+
+    <!-- ================= SIDEBAR ================= -->
+
+    <aside class="sidebar">
+
+        <div class="sidebar-top">
+
+            <h2>Risk<span>Lens</span></h2>
+
+            <div class="menu">
+
+                <a class="active" href="dashboard.html">
+                    <i class="fa-solid fa-house"></i>
+                    <span>Dashboard</span>
+                </a>
+
+                <a href="analytics.html">
+                    <i class="fa-solid fa-chart-line"></i>
+                    <span>Analytics</span>
+                </a>
+
+                <a href="map.html">
+                    <i class="fa-solid fa-map"></i>
+                    <span>Risk Map</span>
+                </a>
+
+                <a href="states.html">
+                    <i class="fa-solid fa-city"></i>
+                    <span>States</span>
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="sidebar-bottom">
+            © 2026 RiskLens AI
+        </div>
+
+    </aside>
+
+    <!-- ================= MAIN ================= -->
+
+    <main class="main">
+
+        <!-- TOP BAR -->
+        <div class="topbar">
+
+            <div>
+
+                <h1>Dashboard</h1>
+
+                <p>Public Health Surveillance Overview</p>
+
+            </div>
+
+            <div class="profile-area">
+
+                <div class="notification">
+                    <i class="fa-solid fa-bell"></i>
+                </div>
+
+                <div class="avatar">
+                    A
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- KPI CARDS -->
+
+        <div class="kpi-grid">
+
+            <div class="kpi-card">
+                <h4>States & UTs</h4>
+                <h2 id="totalStates">28</h2>
+                <span>+2 this year</span>
+                <i class="fa-solid fa-globe kpi-icon"></i>
+            </div>
+
+            <div class="kpi-card">
+                <h4>Average Risk</h4>
+                <h2 id="avgRisk">0.72</h2>
+                <span>Moderate Level</span>
+                <i class="fa-solid fa-triangle-exclamation kpi-icon"></i>
+            </div>
+
+            <div class="kpi-card">
+                <h4>Critical States</h4>
+                <h2 id="criticalStates">6</h2>
+                <span>High Priority</span>
+                <i class="fa-solid fa-radiation kpi-icon"></i>
+            </div>
+
+            <div class="kpi-card">
+                <h4>Clusters</h4>
+                <h2 id="clusters">8</h2>
+                <span>Risk Groups</span>
+                <i class="fa-solid fa-network-wired kpi-icon"></i>
+            </div>
+
+        </div>
+
+        <!-- DASHBOARD GRID -->
+
+        <div class="dashboard-grid">
+
+            <!-- CHART -->
+            <div class="chart-card">
+
+                <h3>Health Risk Trend</h3>
+
+                <canvas id="riskChart"></canvas>
+
+            </div>
+
+            <!-- ALERTS -->
+            <div class="alert-card">
+
+                <h3>Recent Alerts</h3>
+
+                <div class="alert-item alert-critical">
+                    ⚠ Kerala entered Critical Risk Zone
+                </div>
+
+                <div class="alert-item alert-warning">
+                    ⚠ Tamil Nadu obesity levels increasing
+                </div>
+
+                <div class="alert-item alert-success">
+                    ✔ Vaccination improving in Odisha
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- TABLE -->
+
+        <div class="table-card">
+
+            <h3>Top Risk States</h3>
+
+            <table class="table">
+
+                <thead>
+
+                    <tr>
+                        <th>State</th>
+                        <th>Risk Score</th>
+                        <th>Status</th>
+                        <th>Trend</th>
+                    </tr>
+
+                </thead>
+
+                <tbody id="topStatesBody">
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </main>
+
+</div>
+
+<!-- ================= CHART SCRIPT ================= -->
+
+<script src="js/common.js"></script>
+<script src="js/dashboard.js"></script>
+
+</body>
+
+</html>

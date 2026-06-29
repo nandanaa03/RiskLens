@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>RiskLens | States</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="dashboard">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+
+        <div class="sidebar-top">
+
+            <h2>Risk<span>Lens</span></h2>
+
+            <div class="menu">
+
+                <a href="dashboard.html">
+                    <i class="fa-solid fa-house"></i> Dashboard
+                </a>
+
+                <a href="analytics.html">
+                    <i class="fa-solid fa-chart-line"></i> Analytics
+                </a>
+
+                <a href="map.html">
+                    <i class="fa-solid fa-map"></i> Map
+                </a>
+
+                <a class="active" href="states.html">
+                    <i class="fa-solid fa-city"></i> States
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="sidebar-bottom">
+            © 2026 RiskLens AI
+        </div>
+
+    </aside>
+
+    <!-- MAIN -->
+    <main class="main">
+
+        <!-- TOPBAR -->
+        <div class="topbar">
+
+            <div>
+                <h1>State Intelligence</h1>
+                <p>Ranked health risk overview across India</p>
+            </div>
+
+        </div>
+
+        <!-- SEARCH -->
+        <div class="search-bar">
+
+            <input type="text" id="searchInput" placeholder="Search state (e.g., Kerala, Tamil Nadu...)">
+
+        </div>
+
+        <!-- STATE GRID -->
+        <div class="state-grid" id="stateGrid">
+
+            <!-- JS WILL LOAD STATES HERE -->
+
+        </div>
+
+        <!-- FOOTER -->
+        <div class="footer">
+            RiskLens • State-wise Health Intelligence System
+        </div>
+
+    </main>
+
+</div>
+
+<script src="js/states.js"></script>
+
+</body>
+
+</html>
